@@ -11,10 +11,12 @@ datasource db {
 }
 
 model User {
-  id        Int      @id @default(autoincrement())
-  username  String   @unique
-  password  String?
-  email     String?  @unique
-  avatar    String?
-  createdAt DateTime @default(now())
+  id             Int     @id @default(autoincrement())
+  username       String? @unique
+  githubUsername String? @unique
+  password       String?
+  email          String  @unique
+  avatarUrl      String?
+  name           String
+  location       String
 }
