@@ -13,7 +13,7 @@ export const uploadToS3 = async (avatar, folderName) => {
   const newFileName = `${folderName}/${Date.now()}-${filename}`;
   const { Location } = await new AWS.S3()
     .upload({
-      Bucket: "tennis-upload",
+      Bucket: "coffee-upload",
       Key: newFileName,
       ACL: "public-read",
       Body: readStream,

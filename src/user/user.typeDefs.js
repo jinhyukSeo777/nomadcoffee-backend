@@ -1,13 +1,13 @@
 const typeDefs = `
   type User {
     id: Int!
-    email: String
     username: String
-    password: String
-    avatarUrl: String
-    name:String
-    location:String
     githubUsername:String
+    password: String
+    email: String!
+    avatarUrl: String
+    name:String!
+    location:String!
   }
   type MutationResult {
     ok: Boolean!
