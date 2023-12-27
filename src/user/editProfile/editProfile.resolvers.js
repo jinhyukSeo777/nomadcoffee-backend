@@ -11,7 +11,7 @@ const resolvers = {
     editProfile: protectedResolver(
       async (
         _,
-        { username, password, email, avatarUrl: avatar, name, location },
+        { username, password, email, avatar, name, location },
         { loggedInUser }
       ) => {
         let newPassword = null;

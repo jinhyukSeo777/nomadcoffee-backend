@@ -1,11 +1,11 @@
 const typeDefs = `
   type User {
     id: Int!
-    username: String
+    username: String!
     githubUsername:String
-    password: String
+    password: String!
     email: String!
-    avatarUrl: String
+    avatarUrl: String!
     name:String!
     location:String!
   }
